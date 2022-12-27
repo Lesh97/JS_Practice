@@ -81,6 +81,7 @@ body.dark {
   list-style: none;
   display: flex;
   align-items: center;
+  transition: all 0.4 ease;
 }
 .sidebar li .icon {
   display: flex;
@@ -99,7 +100,7 @@ body.dark {
 .sidebar li .drop {
   display: flex;
   align-items: center;
-  padding-left: 5px;
+  padding: 10px;
   min-width: 60px;
   font-size: 14px;
 }
@@ -135,7 +136,7 @@ header .image-text .header-text {
   transform: translateY(-50%) rotate(180deg);
   height: 25px;
   width: 25px;
-  background: var(--primary-color);
+  background: var(--sidebar-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,7 +193,8 @@ header .image-text .header-text {
   color: var(--sidebar-color);
 }
 body.dark .sidebar .li a:hover .icon,
-body.dark .sidebar .li a:hover .text {
+body.dark .sidebar .li a:hover .text,
+body.dark .sidebar .li a:hover .drop {
   color: var(--text-color);
 }
 
@@ -292,24 +294,8 @@ body.dark .switch::before {
   width: calc(100% - 88px);
 }
 
-.menu-bar .menu .menu-link div a {
-  height: 100%;
-  color: var(--text-color);
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.menu-bar .menu .menu-link div .drop {
-  height: 100%;
-  width: 5px;
-  text-align: center;
-  color: var(--text-color);
-  line-height: 70px;
-  transition: all 0.7s ease;
-}
-
-.menu-bar .menu .menu-link div:hover .fermented-drop,
-.menu-bar .menu .menu-link div:hover .distilled-drop,
-.menu-bar .menu .menu-link div:hover .etc-drop {
-  transform: rotateX(180deg);
+.menu-bar .menu .menu-link li .link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
