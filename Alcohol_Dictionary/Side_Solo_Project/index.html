@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dropdown</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon cdn -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <img src="logo.png" alt="logo" />
+        <span class="logo_name">Mysterious Alcohol Dictionary</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="fermented.html">
+              <i class="bx bxs-drink"></i>
+              <span class="link_name">Fermented Liquor</span>
+            </a>
+            <i class="bx bx-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Fermented Liquor</a></li>
+            <li><a href="#">맥주</a></li>
+            <li><a href="#">맥주</a></li>
+            <li><a href="#">맥주</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="distilled.html">
+              <i class="fa-solid fa-whiskey-glass icon"></i>
+              <span class="link_name">Distilled Liquor</span>
+            </a>
+            <i class="bx bx-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Distilled Liquor</a></li>
+            <li><a href="#">위스키</a></li>
+            <li><a href="#">위스키</a></li>
+            <li><a href="#">위스키</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="etc.html">
+              <i class="fa-solid fa-wine-glass icon"></i>
+              <span class="link_name">etc Liquor</span>
+            </a>
+            <i class="bx bx-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">etc Liquor</a></li>
+            <li><a href="#">하이볼</a></li>
+            <li><a href="#">하이볼</a></li>
+            <li><a href="#">하이볼</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-current-location"></i>
+            <span class="link_name">Location</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <span class="text">Drop down</span>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

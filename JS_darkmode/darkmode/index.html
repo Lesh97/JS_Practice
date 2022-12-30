@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage SideBar</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- boxicons css-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.png" alt="logo" />
+          </span>
+
+          <div class="text header-text">
+            <span class="name">Alcohol</span>
+            <span class="profession">I drink. So I exist.</span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <a href="#">
+              <i class="bx bx-search icon"></i>
+              <input type="text" placeholder="Search..." />
+            </a>
+          </li>
+          <ul class="menu-link">
+            <li class="dashboard">
+              <a href="#">
+                <i class="bx bx-home alt icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="fermented">
+              <div class="link-icon">
+                <a href="#">
+                  <i class='bx bxs-drink icon'></i>
+                  <span class="text nav-text">Fermented Liquor</span>
+                </a>
+                  <i class='bx bxs-chevron-down drop'></i>
+              </div>
+            </li>
+
+            <li class="distilled">
+              <div class="link-icon">
+                <a href="#">
+                  <i class="fa-solid fa-whiskey-glass icon"></i>
+                  <span class="text nav-text">Distilled Liquor</span>
+                </a>
+                  <i class='bx bxs-chevron-down drop'></i>
+              </div>
+            </li>
+
+            <li class="etc">
+              <div class="link-icon">
+                <a href="#">
+                  <i class="fa-solid fa-wine-glass icon"></i>
+                  <span class="text nav-text">etc</span>
+                </a>
+                  <i class='bx bxs-chevron-down drop'></i>
+              </div>
+            </li>
+
+            <li class="location">
+              <a href="#">
+                <i class="bx bx-current-location icon"></i>
+                <span class="text nav-text">Location</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+            <li class="mode">
+                <div class="moon-sun">
+                  <i class="bx bx-moon icon moon"></i>
+                  <i class="bx bx-sun icon sun"></i>
+                </div>
+                <span class="mode-text text">Light Mode</span>
+                <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-log-out-circle icon"></i>
+                <span class="text nav-text">Log Out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="text">Dashboard</div>
+    </section>
+
+<script src="script.js"></script>
+
+  </body>
+</html>
